@@ -5,7 +5,7 @@ class CartPage {
     constructor(page) {
         this.page = page;
         this.cartFirstOption = page.locator("div li").first();
-        this.checkoutBtn  = page.locator("text=Checkout");
+        this.checkoutBtn = page.locator("text=Checkout");
     }
 
     async verifyProductIsDisplayed(productName) {

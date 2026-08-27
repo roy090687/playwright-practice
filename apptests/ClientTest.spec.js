@@ -1,7 +1,8 @@
 const { test, expect } = require('@playwright/test');
 const { POManager } = require('../pageobjects/POManager')
 // JSON -> String -> JS Object
-const dataset = JSON.parse(JSON.stringify(require('../resources/placeholderTestData.json')));
+//const dataset = JSON.parse(JSON.stringify(require('../resources/placeholderTestData.json')));
+const dataset = (require('../resources/placeholderTestData.json'));  // automatically returns JS object
 
 /**
  * Test data has been retrieved from an external data source, a json file.

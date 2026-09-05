@@ -40,7 +40,7 @@ function useOfLet() {
 useOfLet();
 
 // var keyword. This is at the function level, not block scoped.
-function useOfvar() {
+function useOfVar() {
     var value = 10;
     if (value === 10) {
         var value = 20;
@@ -49,4 +49,4 @@ function useOfvar() {
     console.log("[Var]: Outside If Block: " + value);
 }
 
-useOfvar();
+useOfVar();

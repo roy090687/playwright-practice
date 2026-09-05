@@ -8,6 +8,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@azure/identity": "^4.13.2",
+    "@azure/playwright": "^1.1.6",
     "@playwright/test": "^1.57.0",
     "@types/node": "^25.9.1",
     "exceljs": "^4.4.0"

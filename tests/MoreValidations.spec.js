@@ -41,7 +41,7 @@ test("popup validations", async ({ page }) => {
     await page.locator('#confirmbtn').click();
 })
 
-test.only("popup validations based on dialog type", async ({ page }) => {
+test("popup validations based on dialog type", async ({ page }) => {
     await page.goto("https://rahulshettyacademy.com/AutomationPractice/");
     page.on('dialog', async dialog => {
         console.log("Dialog type:", dialog.type());

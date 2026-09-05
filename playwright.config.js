@@ -2,7 +2,9 @@ import { defineConfig, devices } from '@playwright/test';
 import { trace } from 'node:console';
 
 const config = ({
-  testDir: '.',
+  testDir: './tests',   // root directory
+  testMatch: '**/*.spec.js',
+  retries: 0,
 
   /*Maximum time one test can run for. */
   timeout: 30 * 1000,
@@ -16,6 +18,7 @@ const config = ({
     headless: false,
     screenshot: 'on',
     trace: 'retain-on-failure', // on, off
+    video: 'retain-on-failure',
   },
 
 });

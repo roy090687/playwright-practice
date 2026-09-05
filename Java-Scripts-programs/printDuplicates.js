@@ -10,7 +10,7 @@ function printDuplicates(input) {
     }
     for (let key in duplicates) {
         if (duplicates[key] > 1) {
-            console.log("Character: " + key + ", Count: " + duplicates[key])
+            console.log("Character: " + key + " Count: " + duplicates[key])
         }
     }
 
